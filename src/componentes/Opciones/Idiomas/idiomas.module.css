@@ -1,0 +1,12 @@
+.bloqueIdiomas{
+    display: flex;
+    width: 100vw;
+    flex: 0 0 auto;
+    justify-content: center;
+}
+.card{
+    width: 40%;
+    height: fit-content;
+    border: 2px solid white;
+
+}

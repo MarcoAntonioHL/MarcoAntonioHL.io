@@ -1,0 +1,17 @@
+.bloqueFormacion{
+  display: flex;
+    width: 100vw;
+    flex: 0 0 auto;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .bloqueFormacion {
+      width: 100%; 
+    }
+}
+.card{
+  width: 40%;
+  height: fit-content;
+  border: 2px solid yellow;
+
+}

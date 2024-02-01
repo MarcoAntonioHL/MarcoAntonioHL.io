@@ -1,0 +1,46 @@
+.portadaMenu{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin:1%;
+    list-style: none;
+    position: relative;
+   
+    
+}
+
+li{
+    margin: 0 2% 0 2%;
+}
+.Link{
+    color:rgba(84, 200, 255, 0.5);
+    text-decoration: none;
+    
+}
+Link:hover{
+    color: rgba(255, 255, 255, 1);
+}
+@media (max-width: 576px) {
+    .portadaMenu{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin:1%;
+        list-style: none;
+        position: relative;
+        
+    }
+    li{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-radius: 5%;
+        
+        
+    }
+    li:hover{
+        background-color:#48482a87 ;
+    }
+}

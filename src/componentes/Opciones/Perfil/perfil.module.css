@@ -1,0 +1,19 @@
+
+.cardPerfil{
+    display: flex;
+    flex: 0 0 auto;
+    width: 100vw;
+    justify-content: center;
+    
+}
+.card{
+    width: 40%;
+    height: fit-content;
+    border: 3px solid rebeccapurple;
+    border-radius: 3%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    
+}
