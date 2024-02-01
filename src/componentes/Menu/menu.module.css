@@ -14,9 +14,7 @@ li{
 a{
     color:rgba(84, 200, 225, 0.5)
 }
-a:hover{
-    color: rgba(255, 255, 255, 1);
-}
+
 @media (max-width: 576px) {
     .menu{
         width: 100%;
