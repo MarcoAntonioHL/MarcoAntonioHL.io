@@ -9,12 +9,13 @@ import styles from './menu.module.css'
 import Presentacion from '../Presentacion'
 import Guia from '../personaje'
 import ContextMenuGuia from '../../layout/contextMenuGuia'
-
+import Menu from '../Menu'
 
 export default function Opciones() {
     
   return (
     <ContextMenuGuia>
+      <Menu>
         <Guia>
             <div className={styles.bloquePadre}>
                 <Presentacion></Presentacion>
@@ -26,6 +27,7 @@ export default function Opciones() {
                 <Intereces></Intereces>
             </div>
         </Guia>
+      </Menu>
     </ContextMenuGuia>
   )
 }

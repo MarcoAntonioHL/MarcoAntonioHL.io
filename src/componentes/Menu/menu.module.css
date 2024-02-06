@@ -5,14 +5,24 @@
     justify-content: center;
     margin:1%;
     list-style: none;
-    position: absolute;
+    position: relative;
+    
+}
+.items{
+    margin: 0;
+    padding: 1%;
+    background-color:hsla(161, 15%, 47%, 0.526) ;
+    border-radius: 8%;
+    /*border: 1px solid black;*/
+}
+.items:hover{
+    background-color:hsla(161, 15%, 47%, 0.3);
+    scale: 1.08;
 }
 
-li{
-    margin: 0 2% 0 2%;
-}
-a{
-    color:rgba(84, 200, 225, 0.5)
+.nombreItems{
+    color:rgba(84, 200, 225, 0.5);
+    text-decoration: none;
 }
 
 @media (max-width: 576px) {
