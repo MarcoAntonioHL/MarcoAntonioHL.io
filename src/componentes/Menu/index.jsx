@@ -34,7 +34,7 @@ const listaVista=[
 
 ]
 
-export default function Menu() {
+export default function Menu({children}) {
 
     const {posicion,setPosicion}=DataContext()
     
@@ -44,14 +44,17 @@ export default function Menu() {
     }
     
   return (
+    <>
     <nav className={styles.menu}>
         {
             listaVista.map((objeto,index)=>(
-                <li key={index}>
-                    <a href={`#${objeto.name}`} onClick={select}>{objeto.name}</a>
+                <li key={index} className={styles.items}>
+                    <a href={`#${objeto.name}`} onClick={select} className={styles.nombreItems}>{objeto.name}</a>
                 </li>
             ))
         }
     </nav>
+    {children}
+    </>
   )
 }
