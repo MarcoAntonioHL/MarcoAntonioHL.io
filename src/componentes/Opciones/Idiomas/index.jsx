@@ -19,6 +19,7 @@ const listaIdiomas=[
 export default function Idiomas() {
   return (
     <div className={styles.bloqueIdiomas} id='Idiomas'>
+      <h3 className={styles.titulo}>Idioma</h3>
       <div className={styles.card}>
       {
       listaIdiomas.map((items,index)=>(

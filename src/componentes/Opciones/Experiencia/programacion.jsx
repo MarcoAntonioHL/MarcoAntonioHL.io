@@ -1,8 +1,14 @@
 import React from 'react'
+import styled from 'styled-components'
 
+const Card=styled.div`
+    background-color: rgba(21, 96, 109, 0.439);
+    margin: 1%;
+    border-radius: 3px;
+`
 export default function Programacion() {
   return (
-    <div>
+    <Card >
         <h3>Experiencia en programación</h3>
         <div>
             <h4>Lenguajes de programacion</h4>
@@ -33,6 +39,6 @@ export default function Programacion() {
             Colaboratory<br/>
             </p>
         </div>
-    </div>
+    </Card>
   )
 }

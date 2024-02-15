@@ -1,4 +1,20 @@
 .bloqueExperiencia{   
-    width: 100vw;
+    width: 100%;
     flex: 0 0 auto;
+    display: block;
+
+}
+.subBloque{
+    display: flex;
+    justify-content: center;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    width: 40%;
+    height: fit-content;
+    margin: 1%;
+    background-color: rgba(87, 115, 122, 0.2);
 }

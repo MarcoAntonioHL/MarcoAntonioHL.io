@@ -1,0 +1,35 @@
+.titulo{
+
+    display: flex;
+    justify-content: center;
+}
+.Contenedor{
+    
+    width: 100%;
+    display: flex;
+}
+.SeccionDerecha{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cartImagen{
+   width: 40%;
+   height: 170px;
+   border: 5px solid rgb(155, 188, 155);
+   border-radius: 6px;
+   background-color:rgba(182, 51, 51, 0.557);
+   margin: 1%;
+   transform: rotate(-5deg);
+}
+@media(max-width: 576px){
+    .cartImagen{
+        width: 100%;
+        height: 100px;
+    }
+}
+.Descripcion{
+    width: 50%;
+    margin: 1%;
+    
+}

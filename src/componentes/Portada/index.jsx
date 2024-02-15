@@ -61,7 +61,9 @@ const SubNombre=styled.h4`
     }
 `
 const ImagenPersonal=styled.img`
-    background-color: blue;
+    
+    width: 200px;
+    height: 300;
 `
 const RedesSociales=styled.li`
     list-style: none;
@@ -111,18 +113,18 @@ export default function Portada() {
         <Nombre>Marco Antonio Huaman Lonconi </Nombre>
         <SubNombre>Developer junior</SubNombre>
       </div>
-        <ImagenPersonal src='' alt="imagen" />
-        <RedesSociales>
-          {
-            enlaces.map((items,index)=>(
-              <Items key={index}>
-                <ReferenciaRedSocial href=""><items.logo/></ReferenciaRedSocial>
-                <NombreRedSocial>{items.name}</NombreRedSocial>
-              </Items>
-            ))
-          }
-          <a href=""></a>
-        </RedesSociales>
+      <ImagenPersonal src="/MarcoAntonioHL.io/public/imagenesInportadas/perfil.png" alt="imagen"></ImagenPersonal>
+      <RedesSociales>
+        {
+          enlaces.map((items,index)=>(
+            <Items key={index}>
+              <ReferenciaRedSocial href=""><items.logo/></ReferenciaRedSocial>
+              <NombreRedSocial>{items.name}</NombreRedSocial>
+            </Items>
+          ))
+        }
+        <a href=""></a>
+      </RedesSociales>
     </Contenedor>
   )
 }

@@ -14,8 +14,8 @@ const listaformacion=[
 export default function Formacion() {
   return (
     <div className={styles.bloqueFormacion} id='Formacion'>
+      <h3 className={styles.titulo}>Formacion</h3>
       <div className={styles.card}>
-      <h3>Formacion</h3>
       {listaformacion.map((item,index)=>(
         <p key={index}>{item.materia}<br/>{item.lugar}</p>
       ))

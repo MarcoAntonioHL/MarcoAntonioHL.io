@@ -20,7 +20,7 @@ export default function Opciones() {
             <div className={styles.bloquePadre}>
                 <Presentacion></Presentacion>
                 <Perfil></Perfil>
-                <Datos></Datos>
+                {/*<Datos></Datos>*/}
                 <Formacion></Formacion>
                 <Experiencia></Experiencia>
                 <Idiomas></Idiomas>
