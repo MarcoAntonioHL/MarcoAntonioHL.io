@@ -14,9 +14,8 @@ export default function Datos() {
   const presentacion='Hola estos son mis datos'
   return (
     <div className={styles.datos} id='Datos'>
+      <h2 className={styles.titulo}>Datos</h2>
       <div className={styles.card}>
-        <h2>Datos</h2>
-        <p>presentacion</p>
         <p>Nombre:{misDatos.name +' '+ misDatos.lastname}</p>
         <p>DNI:{misDatos.dni}</p>
         <p>Correo:{misDatos.email}</p>

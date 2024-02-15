@@ -18,6 +18,9 @@ export default function MenuPortada() {
       
         <div  className={`${click? styles.itemsMenu:styles.itemsMenuActive}`}> 
           <li>
+              <Link to='/'className={styles.Link}>Inicio</Link>
+          </li>
+          <li>
               <Link to='/About'className={styles.Link}>Acerca de mi</Link>
           </li>
           <li>

@@ -13,17 +13,17 @@ const historial=[
 export default function Experiencia() {
   return (
     <div className={styles.bloqueExperiencia} id='Experiencia'>
-      <h2>Historial Laboral</h2>
-      {historial.map((items,index)=>(
-        <div key={index}> 
-          <h3>{items.company}</h3>
-          <p>{items.fechaInicio+'-'+items.fechaFin+'('+items.tipoContrato+')'}</p>
-          <p>{items.description}</p>
-
-        </div>
-      ))}
-      <Programacion></Programacion>
-
+      <h2 className={styles.titulo}>Historial Laboral</h2>
+      <div className={styles.subBloque}>
+        {historial.map((items,index)=>(
+          <div key={index} className={styles.card}> 
+            <h3>{items.company}</h3>
+            <p>{items.fechaInicio+'-'+items.fechaFin+'('+items.tipoContrato+')'}</p>
+            <p>{items.description}</p>
+          </div>
+        ))}
+        <Programacion></Programacion>
+      </div>
     </div>
   )
 }
