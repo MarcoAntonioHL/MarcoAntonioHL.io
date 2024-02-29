@@ -2,39 +2,39 @@ import React, { useContext, useEffect } from 'react'
 import {DataContext} from '../../layout/contextMenuGuia'
 import styles from './menu.module.css'
 
-const listaVista=[
-    {
-        name:"Presentacion"
-    },
-    {
-        
-        name:"Perfil"
-    },
-    /*{
-       
-        name:"Datos"
-    },*/
-    {
 
-        name:"Formacion"
-    },
-    {
-        
-        name:"Experiencia"
-    },
-    {
-       
-        name:"Idiomas"
-    },
-    {
-       
-        name:"Intereces"
-    }
-
-]
 
 export default function Menu({children}) {
-
+    const listaVista=[
+        {
+            name:"Presentacion"
+        },
+        {
+            
+            name:"Perfil"
+        },
+        /*{
+           
+            name:"Datos"
+        },*/
+        {
+    
+            name:"Formacion"
+        },
+        {
+            
+            name:"Experiencia"
+        },
+        {
+           
+            name:"Idiomas"
+        },
+        {
+           
+            name:"Intereces"
+        }
+    
+    ]
     const {posicion,setPosicion}=DataContext()
     
     const select=(event)=>{
