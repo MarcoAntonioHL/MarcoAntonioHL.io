@@ -91,19 +91,23 @@ const NombreRedSocial=styled.h5`
 const enlaces=[
   {
     logo:FaFacebook,
-    name:'Facebook'
+    name:'Facebook',
+    referencia:'https://web.facebook.com/marcoantonio.huamanlonconi/',
   },
   {
     logo:FaInstagram,
-    name:'Instagram'
+    name:'Instagram',
+    referencia:'https://www.instagram.com/marcohlantonio/',
   },
   {
     logo:FaGithub,
-    name:'Github'
+    name:'Github',
+    referencia:'https://github.com/MarcoAntonioHL',
   },
   {
     logo:FaWhatsapp,
-    name:'whatsaap'
+    name:'whatsaap',
+    referencia:'https://wa.me/928751897/?text=urlencodedtext',
   }
 ]
 export default function Portada() {
@@ -113,12 +117,12 @@ export default function Portada() {
         <Nombre>Marco Antonio Huaman Lonconi </Nombre>
         <SubNombre>Developer junior</SubNombre>
       </div>
-      <ImagenPersonal src="/MarcoAntonioHL.io/public/imagenesInportadas/perfil.png" alt="imagen"></ImagenPersonal>
+      <ImagenPersonal src="MarcoAntonioHL.io/public/imagenesInportadas/perfil.png" alt="imagen"></ImagenPersonal>
       <RedesSociales>
         {
           enlaces.map((items,index)=>(
             <Items key={index}>
-              <ReferenciaRedSocial href=""><items.logo/></ReferenciaRedSocial>
+              <ReferenciaRedSocial href={items.referencia}><items.logo/></ReferenciaRedSocial>
               <NombreRedSocial>{items.name}</NombreRedSocial>
             </Items>
           ))

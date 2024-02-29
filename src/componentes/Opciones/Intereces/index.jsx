@@ -22,10 +22,10 @@ const voluntareado=[
 export default function Intereces() {
   return (
     <div className={styles.bloqueIntereces} id='Intereces'>
-      <h3>Voluntareado</h3>
+      <h3 className={styles.titulo}>Voluntareado</h3>
       {
         voluntareado.map((items,index)=>(
-          <div key={index} >
+          <div key={index} className={styles.descripcion} >
             <p>{items.description}</p>
             <div>{items.subdescription? 
             items.subdescription.map((subitem,subindex)=>(

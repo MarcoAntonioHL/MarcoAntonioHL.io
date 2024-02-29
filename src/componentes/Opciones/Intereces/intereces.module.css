@@ -1,4 +1,17 @@
 .bloqueIntereces{
-    width: 100vw;
+    width: 100%;
+    display: block;
     flex: 0 0 auto;    
+}
+.titulo
+{
+    display: flex;
+    justify-content: center;
+}
+.descripcion{
+    background-color: rgba(87, 115, 122, 0.2);
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+
 }
