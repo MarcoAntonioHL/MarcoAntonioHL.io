@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { FaGithub,FaInstagram,FaFacebook,FaWhatsapp  } from "react-icons/fa";
+import { FaGithub,FaInstagram,FaFacebook,FaWhatsapp, FaLinkedin  } from "react-icons/fa";
+import { MdEmail } from 'react-icons/md';
 
 const Contenedor=styled.div`
     width: 100%;
@@ -11,10 +12,7 @@ const Contenedor=styled.div`
     align-items: center;
     justify-content: center;
     @media(max-width: 600px){
-      grid-template-columns: 50% 50%;
-    }
-    @media (max-width:350px) {
-      grid-template-columns: 100%;
+      grid-template-columns: 100% ;
     }
 
 `
@@ -67,17 +65,13 @@ const ImagenPersonal=styled.img`
 `
 const RedesSociales=styled.li`
     list-style: none;
-    @media (max-width:350px) {
-      display: flex;
-      flex-wrap: wrap;
-    }
+    display:flex;
+    flex-direction:column;
+    
 `
 const Items=styled.div`
-  width: 100%;
-  display: grid;
-  grid-template-columns: 30% 70%;
-  gap: 1;
-
+    display:flex;
+    flex-wrap:nowrap;
 `
 const ReferenciaRedSocial=styled.a`
   display: flex;
@@ -85,8 +79,15 @@ const ReferenciaRedSocial=styled.a`
   justify-content: center;
 `
 const NombreRedSocial=styled.h5`
-  margin: 5%;
+  margin: 1%;
   color: rgba(255,255,255,0.30);
+`
+const LogoCustom=styled.div`
+  color:white;
+  &:hover{
+    color:skyblue;
+    transform:scale(1.5,1.5)
+  }
 `
 const enlaces=[
   {
@@ -108,6 +109,16 @@ const enlaces=[
     logo:FaWhatsapp,
     name:'whatsaap',
     referencia:'https://wa.me/928751897/?text=urlencodedtext',
+  },
+  {
+    logo:FaLinkedin,
+    name:'Linkedin',
+    referencia:'https://www.linkedin.com/in/marco-antonio-huaman-lonconi-2a31a7270/',
+  },
+  {
+    logo:MdEmail,
+    name:'Correo',
+    referencia:'marco.hl9antonio@gmail.com',
   }
 ]
 export default function Portada() {
@@ -122,12 +133,11 @@ export default function Portada() {
         {
           enlaces.map((items,index)=>(
             <Items key={index}>
-              <ReferenciaRedSocial href={items.referencia}><items.logo/></ReferenciaRedSocial>
+              <ReferenciaRedSocial href={items.referencia}><LogoCustom ><items.logo/></LogoCustom></ReferenciaRedSocial>
               <NombreRedSocial>{items.name}</NombreRedSocial>
             </Items>
           ))
         }
-        <a href=""></a>
       </RedesSociales>
     </Contenedor>
   )

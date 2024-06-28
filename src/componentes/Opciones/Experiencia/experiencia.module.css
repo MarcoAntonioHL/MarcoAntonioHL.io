@@ -6,15 +6,26 @@
 }
 .subBloque{
     display: flex;
+    flex-wrap:wrap;
     justify-content: center;
+    @media(max-width:600px)
+    {
+        display: flex;
+        flex-direction: column;
+    }
 }
 .titulo{
     display: flex;
     justify-content: center;
 }
 .card{
-    width: 40%;
+    width: 30%;
     height: fit-content;
     margin: 1%;
     background-color: rgba(87, 115, 122, 0.2);
+
+    @media(max-width:600px)
+    {
+        width: 100%;
+    }
 }

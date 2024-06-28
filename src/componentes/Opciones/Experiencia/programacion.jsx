@@ -9,10 +9,10 @@ const Card=styled.div`
 const informacion=[
     {
         empresa:1,
-        lenguajes:"JavaScript, HTML, CSS, Material UI",
-        frameworks:"React",
-        BD:"PostgreSQL",
-        herramientas:"Postman, Xamp, Figma, Bizagi, Git, Github",
+        lenguajes:"JavaScript,C#,Python, HTML, CSS, Material UI,Bootstrap, ",
+        frameworks:"React ,DJango, .Net",
+        BD:"PostgreSQL ,SQLServer",
+        herramientas:"Postman, Xamp, Figma, Bizagi, Git, Github, Colaboratory,PowerBI",
     }
 ]
 export default function Programacion() {

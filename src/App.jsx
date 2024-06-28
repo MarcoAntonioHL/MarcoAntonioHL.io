@@ -10,7 +10,7 @@ import { Route, Routes } from 'react-router-dom'
 import Proyects from './componentes/Proyectos'
 import Contact from './componentes/Contacto'
 import MenuPortada from './componentes/MenuPortada'
-
+import "bootstrap"
 
 function App() {
   /*useEffect(()=>{
