@@ -19,6 +19,8 @@ const voluntareado=[
     
   }
 ]
+
+const Hobbies=["Football","BasketBall","Musica","Lectura"]
 export default function Intereces() {
   return (
     <div className={styles.bloqueIntereces} id='Intereces'>
@@ -35,6 +37,14 @@ export default function Intereces() {
           </div>
           )
       )}
+      <h3 className={styles.titulo}>Hobbies</h3>
+      {
+        Hobbies.map(items=>(
+          <div>
+            {items}
+          </div>
+        ))
+      }
     </div>
 
   )
