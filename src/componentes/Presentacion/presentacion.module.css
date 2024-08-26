@@ -31,5 +31,13 @@ h1,h4, h5{
     width: 100vw;
     height: auto;
     flex: 0 0 auto;
+    display: flex;
+    align-content: space-around;
+}
+.imagenPresentacion{
+    width: 150px;
+    height: 250px;
+    background-color: aliceblue;
+    border-radius: 10px ;
     
 }
