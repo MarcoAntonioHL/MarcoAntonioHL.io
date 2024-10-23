@@ -10,7 +10,10 @@
     li{
         margin: 0 2% 0 2%;
     }
-
+    @media(max-width:578px)
+    {
+        display: none;
+    }
 }
 
 .Link{
@@ -30,17 +33,11 @@
     margin:1%;
     list-style: none;
     position: relative;
-    @media (min-width:578px) {    
-        position: initial;      
-    }
-    @media(max-width:578px){
-        display: none;
-    }
 
 }   
 .barras{
     @media (min-width:578px) {    
-        display: none;
+       display: none;
     }
 }
 .itemsMenuActive{
@@ -51,6 +48,9 @@
     margin:1%;
     list-style: none;
     position: relative;
+    li{
+        margin: 0 2% 0 2%;
+    }
     @media(max-width:578px){
         width: 100%;
         display:block;
@@ -63,4 +63,5 @@
         right: 0;
         position: relative;
     }
+    
 }

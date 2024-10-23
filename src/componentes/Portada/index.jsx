@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { FaGithub,FaInstagram,FaFacebook,FaWhatsapp, FaLinkedin  } from "react-icons/fa";
 import { MdEmail } from 'react-icons/md';
-
+import { ButtonSimple } from '../../utils';
 const Contenedor=styled.div`
     width: 100%;
     height: 300px;
@@ -61,7 +61,7 @@ const SubNombre=styled.h4`
 const ImagenPersonal=styled.img`
     
     width: 200px;
-    height: 300;
+    height: 300px;
 `
 const RedesSociales=styled.li`
     list-style: none;
@@ -73,10 +73,18 @@ const Items=styled.div`
     display:flex;
     flex-wrap:nowrap;
 `
+const SubItem=styled.div`
+  width:20%;
+
+`
+
 const ReferenciaRedSocial=styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
+`
+const CajaNombre=styled.div`
+  width:80%;
 `
 const NombreRedSocial=styled.h5`
   margin: 1%;
@@ -86,7 +94,7 @@ const LogoCustom=styled.div`
   color:white;
   &:hover{
     color:skyblue;
-    transform:scale(1.5,1.5)
+    transform:scale(1.5)
   }
 `
 const enlaces=[
@@ -128,13 +136,17 @@ export default function Portada() {
         <Nombre>Marco Antonio Huaman Lonconi </Nombre>
         <SubNombre>Developer junior</SubNombre>
       </div>
-      <ImagenPersonal src="MarcoAntonioHL.io/public/imagenesInportadas/perfil.png" alt="imagen"></ImagenPersonal>
+      <ImagenPersonal src="MarcoAntonioHL.io/public/imagenesInportadas/perfil2.svg" alt="imagen"></ImagenPersonal>
       <RedesSociales>
         {
           enlaces.map((items,index)=>(
             <Items key={index}>
-              <ReferenciaRedSocial href={items.referencia}><LogoCustom ><items.logo/></LogoCustom></ReferenciaRedSocial>
-              <NombreRedSocial>{items.name}</NombreRedSocial>
+              <SubItem>
+                <ReferenciaRedSocial href={items.referencia}><LogoCustom ><items.logo/></LogoCustom></ReferenciaRedSocial>
+              </SubItem>
+              <CajaNombre>
+                <NombreRedSocial>{items.name}</NombreRedSocial>
+              </CajaNombre> 
             </Items>
           ))
         }

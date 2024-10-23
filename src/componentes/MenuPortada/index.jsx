@@ -14,7 +14,7 @@ export default function MenuPortada() {
   
   return (
     <>
-    <nav className={styles.portadaMenu}>
+    <nav className={`${click? styles.portadaMenu:styles.itemsMenuActive}`}>
       
         <div  className={`${click? styles.itemsMenu:styles.itemsMenuActive}`}> 
           <li>
@@ -30,8 +30,9 @@ export default function MenuPortada() {
               <Link to='/Contact'className={styles.Link}>Contacto</Link>
           </li>
         </div>
-        <MdOutlineMenuOpen className={styles.barras} onClick={dropdownOpen}/>
+        
     </nav>
+    <MdOutlineMenuOpen className={styles.barras} onClick={dropdownOpen}/>
     <Outlet/>
     </>
   )
