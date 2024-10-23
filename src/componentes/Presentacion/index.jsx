@@ -9,7 +9,7 @@ const ImagenPersonal=styled.img
 export default function Presentacion() {
   return (
     
-    <div className={styles.bloquePresentacion} id='Presentacion'>
+    <div className={styles.bloquePresentacion} id="Presentacion">
         <div className={styles.presentacionNombre}>
             <h1>Marco Antonio Huaman Lonconi<br/></h1>
             <h5>Desarrollador</h5>
