@@ -21,16 +21,18 @@ export default function Programacion() {
         <h3>Experiencia en programación</h3>
         <div>
             <h4>Tecnologias</h4>
-            <img src="MarcoAntonioHL.io/cshat2.svg" alt="c" />
-            <img src={`${process.env.PUBLIC_URL}/cshat2.svg`} alt="char" />
-            <img src="MarcoAntonioHL.io/public/reactsvg.svg" alt="react" />
-            <img src="MarcoAntonioHL.io/public/jssvg.svg" alt="JS" />
-            <img src="MarcoAntonioHL.io/public/css.svg" alt="css" />
-            <img src="MarcoAntonioHL.io/public/htmlSvg.svg" alt="html" />
-            <img src="MarcoAntonioHL.io/public/sqlsvg.svg" alt="sql" />
-            <img src="MarcoAntonioHL.io/public/git.svg" alt="sql" />
-            <img src="MarcoAntonioHL.io/public/github.svg" alt="sql" />
-            <img src="MarcoAntonioHL.io/public/netcore.svg" alt="sql" />
+
+            
+            <img src={`${process.env.PUBLIC_URL}/cshat2.svg`} alt="shart" />
+            <img src={`${process.env.PUBLIC_URL}/reactsvg.svg`} alt="react" />
+            <img src={`${process.env.PUBLIC_URL}/jssvg.svg`} alt="JS" />
+            <img src={`${process.env.PUBLIC_URL}/css.svg`} alt="css" />
+            <img src={`${process.env.PUBLIC_URL}/htmlSvg.svg`} alt="html" />
+            <img src={`${process.env.PUBLIC_URL}/sqlsvg.svg`} alt="sql" />
+            <img src={`${process.env.PUBLIC_URL}/git.svg`} alt="sql" />
+            <img src={`${process.env.PUBLIC_URL}/github.svg`} alt="sql" />
+            <img src={`${process.env.PUBLIC_URL}/netcore.svg`} alt="sql" />
+
 
             <h6>{informacion[0].frameworks}</h6>
             <h6>{informacion[0].BD}</h6>
