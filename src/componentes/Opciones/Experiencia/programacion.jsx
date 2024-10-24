@@ -21,7 +21,7 @@ export default function Programacion() {
         <h3>Experiencia en programación</h3>
         <div>
             <h4>Tecnologias</h4>
-            <img src="MarcoAntonioHL.io/public/cshat2.svg" alt="c" />
+            <img src="MarcoAntonioHL.io/cshat2.svg" alt="c" />
             <img src="MarcoAntonioHL.io/public/reactsvg.svg" alt="react" />
             <img src="MarcoAntonioHL.io/public/jssvg.svg" alt="JS" />
             <img src="MarcoAntonioHL.io/public/css.svg" alt="css" />
