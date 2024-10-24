@@ -2,8 +2,6 @@ import React, { useContext, useEffect } from 'react'
 import {DataContext} from '../../layout/contextMenuGuia'
 import styles from './menu.module.css'
 
-
-
 export default function Menu({children}) {
     const listaVista=[
         {

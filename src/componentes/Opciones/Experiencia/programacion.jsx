@@ -21,6 +21,7 @@ export default function Programacion() {
         <h3>Experiencia en programación</h3>
         <div>
             <h4>Tecnologias</h4>
+
             
             <img src={`${process.env.PUBLIC_URL}/cshat2.svg`} alt="shart" />
             <img src={`${process.env.PUBLIC_URL}/reactsvg.svg`} alt="react" />
@@ -31,6 +32,7 @@ export default function Programacion() {
             <img src={`${process.env.PUBLIC_URL}/git.svg`} alt="sql" />
             <img src={`${process.env.PUBLIC_URL}/github.svg`} alt="sql" />
             <img src={`${process.env.PUBLIC_URL}/netcore.svg`} alt="sql" />
+
 
             <h6>{informacion[0].frameworks}</h6>
             <h6>{informacion[0].BD}</h6>
