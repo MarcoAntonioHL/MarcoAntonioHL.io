@@ -20,8 +20,17 @@ export default function Programacion() {
     <Card >
         <h3>Experiencia en programación</h3>
         <div>
-            <h4>Lenguajes de programacion</h4>
-            <h6>{informacion[0].lenguajes}</h6>
+            <h4>Tecnologias</h4>
+            <img src="MarcoAntonioHL.io/public/cshat2.svg" alt="c" />
+            <img src="MarcoAntonioHL.io/public/reactsvg.svg" alt="react" />
+            <img src="MarcoAntonioHL.io/public/jssvg.svg" alt="JS" />
+            <img src="MarcoAntonioHL.io/public/css.svg" alt="css" />
+            <img src="MarcoAntonioHL.io/public/htmlSvg.svg" alt="html" />
+            <img src="MarcoAntonioHL.io/public/sqlsvg.svg" alt="sql" />
+            <img src="MarcoAntonioHL.io/public/git.svg" alt="sql" />
+            <img src="MarcoAntonioHL.io/public/github.svg" alt="sql" />
+            <img src="MarcoAntonioHL.io/public/netcore.svg" alt="sql" />
+
             <h6>{informacion[0].frameworks}</h6>
             <h6>{informacion[0].BD}</h6>
             <h6>{informacion[0].herramientas}</h6>
