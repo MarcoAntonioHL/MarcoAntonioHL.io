@@ -22,6 +22,7 @@ export default function Programacion() {
         <div>
             <h4>Tecnologias</h4>
             <img src="MarcoAntonioHL.io/cshat2.svg" alt="c" />
+            <img src={`${process.env.PUBLIC_URL}/cshat2.svg`} alt="char" />
             <img src="MarcoAntonioHL.io/public/reactsvg.svg" alt="react" />
             <img src="MarcoAntonioHL.io/public/jssvg.svg" alt="JS" />
             <img src="MarcoAntonioHL.io/public/css.svg" alt="css" />
