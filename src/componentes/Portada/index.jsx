@@ -136,7 +136,7 @@ export default function Portada() {
         <Nombre>Marco Antonio Huaman Lonconi </Nombre>
         <SubNombre>Developer junior</SubNombre>
       </div>
-      <ImagenPersonal src={`${process.env.PUBLIC_URL}/imagenesInportadas/perfil2.svg`} alt="imagen"></ImagenPersonal>
+      <ImagenPersonal src={`${process.env.PUBLIC_URL}/perfil2.svg`} alt="imagen"></ImagenPersonal>
       <RedesSociales>
         {
           enlaces.map((items,index)=>(
