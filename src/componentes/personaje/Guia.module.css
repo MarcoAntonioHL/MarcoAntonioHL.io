@@ -1,13 +1,24 @@
+.ContenedorModulo
+{
+    display: flex;
+    align-items: center;
+}
+.ContenedorGuia
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+}
+
 .dibujo{
+    
     width: auto;
     height: auto;
-    position: fixed;   
     display: flex;
     flex-wrap: nowrap;
-    align-items: end;
+    align-items: flex-end;
     left: 50%;
-    top: 70%;
-    
 }
 .imagen{
     fill: white;
@@ -41,14 +52,13 @@ svg:hover{
     width: 65px;
 }
 .dibujoIzquierda{
+
     width: auto;
     height: auto;
-    position: fixed;   
     display: flex;
     flex-wrap: nowrap;
-    align-items: end;
+    align-items: flex-end;
     left: 10%;
-    top: 70%;
 }
 .imagenSVG{
     width: 30px;

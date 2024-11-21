@@ -39,8 +39,8 @@ export default function Intereces() {
       )}
       <h3 className={styles.titulo}>Hobbies</h3>
       {
-        Hobbies.map(items=>(
-          <div>
+        Hobbies.map((items,index)=>(
+          <div key={index}>
             {items}
           </div>
         ))
