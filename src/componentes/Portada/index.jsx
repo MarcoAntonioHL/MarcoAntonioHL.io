@@ -20,6 +20,7 @@ const Contenedor=styled.div`
 
 `
 const Nombre=styled.h1`
+    font-family: Helvetica,Georgia,'Times New Roman',arial, sans-serif;
     color:rgba(255,255,255,0.8);
     animation-name: nombre;
     animation-duration: 2s;
@@ -40,7 +41,7 @@ const Nombre=styled.h1`
     }
 `
 const SubNombre=styled.h4`
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Helvetica,Georgia, 'Times New Roman', Times, sans-serif;
   color:rgba(255,255,255,0.8);
   animation-name: subnombre;
     animation-duration: 3s;
