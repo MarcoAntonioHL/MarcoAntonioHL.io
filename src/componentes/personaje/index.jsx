@@ -42,19 +42,22 @@ export default function Guia({children}) {
   },[posicionIndex])
 
   return (
-    <div className={styles.ContenedorGuia}>
-      {pos>=0 && pos<nombres.length-1 ?<a href={`#${ID}`} onClick={haciaDelante}>
-        <ImagenGuia></ImagenGuia>
-      </a>:<a href={`#${ID}`} onClick={haciaDelante}>
-      </a>
-        }
-      {pos>=1 ? <a href={`#${IDback}`} onClick={haciaTras} >
-        <ImagenGuia direction='izquierda'></ImagenGuia>
-      </a>
-      :
-      <a href={`#${IDback}`} onClick={haciaTras}>
-      </a>}
+    <div className={styles.ContenedorModulo}>
+      <div className={styles.ContenedorGuia}>
+        {pos>=1 ? <a href={`#${IDback}`} onClick={haciaTras} >
+          <ImagenGuia direction='izquierda'></ImagenGuia>
+        </a>
+        :
+        <a href={`#${IDback}`} onClick={haciaTras}>
+        </a>}
+        {pos>=0 && pos<nombres.length-1 ?<a href={`#${ID}`} onClick={haciaDelante}>
+          <ImagenGuia></ImagenGuia>
+        </a>:<a href={`#${ID}`} onClick={haciaDelante}>
+        </a>
+          }
+      </div>
       {children}
+    
     </div>
   )
 }

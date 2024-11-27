@@ -3,13 +3,16 @@ import styled from 'styled-components'
 import { FaGithub,FaInstagram,FaFacebook,FaWhatsapp, FaLinkedin  } from "react-icons/fa";
 import { MdEmail } from 'react-icons/md';
 import { ButtonSimple } from '../../utils';
+import Opciones from '../Opciones';
+import Proyects from '../Proyectos';
+import Contact from '../Contacto';
 const Contenedor=styled.div`
     width: 100%;
-    height: 300px;
+    height: 100vh;
     display: grid;
     grid-template-columns: 50% 30% 20%;
-    //grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
-    align-items: center;
+    /*grid-template-columns: repeat(auto-fill,minmax(300px,1fr));*/
+    align-items: flex-start;
     justify-content: center;
     @media(max-width: 600px){
       grid-template-columns: 100% ;
@@ -131,12 +134,13 @@ const enlaces=[
 ]
 export default function Portada() {
   return (
+    <>
     <Contenedor>
       <div>
         <Nombre>Marco Antonio Huaman Lonconi </Nombre>
         <SubNombre>Developer junior</SubNombre>
       </div>
-      <ImagenPersonal src={`${process.env.PUBLIC_URL}/perfil2.svg`} alt="imagen"></ImagenPersonal>
+      <ImagenPersonal src={`MarcoAntonioHL.io/public/imagenesInportadas/perfil2.svg`} alt="imagen"></ImagenPersonal>
       <RedesSociales>
         {
           enlaces.map((items,index)=>(
@@ -152,5 +156,9 @@ export default function Portada() {
         }
       </RedesSociales>
     </Contenedor>
+    <Opciones></Opciones>
+    <Proyects></Proyects>
+    <Contact></Contact>
+    </>
   )
 }
