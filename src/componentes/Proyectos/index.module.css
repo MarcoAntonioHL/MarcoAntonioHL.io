@@ -1,5 +1,10 @@
+.ContenedorProyectos
+{
+    width: 100%;
+    height:100vh;
+}
 .titulo{
-
+    font-family:Helvetica,Arial, sans-serif;
     display: flex;
     justify-content: center;
 }
@@ -13,14 +18,44 @@
     display: flex;
     flex-wrap: wrap;
 }
-.cartImagen{
+.cards{
+    width: 100%;
+    border: solid blue 1px;
+    margin: 3%;
+    display: flex;
+    flex-wrap: wrap;
+ 
+}
+.cardImagen{
    width: 40%;
    height: 170px;
    border: 5px solid rgb(155, 188, 155);
    border-radius: 6px;
-   background-color:rgba(182, 51, 51, 0.557);
+   background-color:rgba(126, 23, 23, 0.557);
    margin: 1%;
    transform: rotate(-5deg);
+   
+}
+.cardImagen:hover{
+    animation-name: cardProyecto;
+    animation: cardProyecto 0.5s forwards;
+}
+@keyframes cardProyecto
+{
+    0%{
+        transform: rotate(-5deg);
+    }
+    50%
+    {
+        transform: rotate(-2deg);
+        transform:scale(1);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+        transform:scale(1.1);
+    }
+    
 }
 @media(max-width: 576px){
     .cartImagen{
@@ -34,7 +69,3 @@
     
 }
 
-.cartImagen:hover>:not(:hover){
-    filter: blur(5px);
-    opacity: 0.5;
-}
