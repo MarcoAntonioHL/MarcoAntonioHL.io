@@ -43,7 +43,7 @@ export default function Contact() {
       </div>
       <div className={styles.bodyContactos}>
         <div className={styles.imagen}>
-          <img src="/MarcoAntonioHL.io/public/imagenesInportadas/perfil2.svg" alt="imagen"/>
+          <img src="/public/imagenesInportadas/perfil2.svg" alt="imagen"/>
         </div>
         <div className={styles.contenedorCards}>
           {
