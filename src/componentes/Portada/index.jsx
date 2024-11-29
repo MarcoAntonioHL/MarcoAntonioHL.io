@@ -162,7 +162,7 @@ export default function Portada() {
         <Nombre>Marco Antonio Huaman Lonconi </Nombre>
         <SubNombre>Developer {subnombre}</SubNombre>
       </div>
-      <ImagenPersonal src={`MarcoAntonioHL.io/public/imagenesInportadas/perfil2.svg`} alt="imagen"></ImagenPersonal>
+      <ImagenPersonal src={`./imagenesInportadas/perfil2.svg`} alt="imagen"></ImagenPersonal>
       <RedesSociales>
         {
           enlaces.map((items,index)=>(
