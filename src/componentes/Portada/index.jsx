@@ -6,6 +6,7 @@ import { ButtonSimple } from '../../utils';
 import Opciones from '../Opciones';
 import Proyects from '../Proyectos';
 import Contact from '../Contacto';
+import StackTecnologico from '../StackTecnologico';
 const Contenedor=styled.div`
     width: 100%;
     height: 100vh;
@@ -13,9 +14,9 @@ const Contenedor=styled.div`
     grid-template-columns: 50% 30% 20%;
     /*grid-template-columns: repeat(auto-fill,minmax(300px,1fr));*/
     align-items: flex-start;
-    justify-content: center;
     @media(max-width: 600px){
       grid-template-columns: 100% ;
+      
     }
 
 `
@@ -63,41 +64,60 @@ const SubNombre=styled.h4`
     }
 `
 const ImagenPersonal=styled.img`
-    
-    width: 200px;
-    height: 300px;
+
+    width: 100%;
+    height: 210px;
+    display: flex;
+   
 `
 const RedesSociales=styled.li`
     list-style: none;
     display:flex;
     flex-direction:column;
-    
+    align-items: center;
 `
 const Items=styled.div`
+
+width: 50%;
     display:flex;
     flex-wrap:nowrap;
+    align-items: center;
+    
 `
 const SubItem=styled.div`
+
   width:20%;
-
+  margin: 2px;
 `
-
 const ReferenciaRedSocial=styled.a`
+ 
   display: flex;
   align-items: center;
   justify-content: center;
 `
 const CajaNombre=styled.div`
-  width:80%;
+  width:100%;
+  & :hover{
+    color: #B37729 ;
+  }
 `
-const NombreRedSocial=styled.h5`
+const NombreRedSocial=styled.a`
+
   margin: 1%;
   color: rgba(255,255,255,0.30);
+  text-decoration: none;
+
+`
+const CustomNombreRedSocial=styled.h5`
+  
+  :hover{
+    color: #B37729;
+  }
 `
 const LogoCustom=styled.div`
   color:white;
   &:hover{
-    color:skyblue;
+    color:#B37729;
     transform:scale(1.5)
   }
 `
@@ -134,12 +154,13 @@ const enlaces=[
   }
 ]
 export default function Portada() {
+  let subnombre="<./>"
   return (
     <>
     <Contenedor>
       <div>
         <Nombre>Marco Antonio Huaman Lonconi </Nombre>
-        <SubNombre>Developer junior</SubNombre>
+        <SubNombre>Developer {subnombre}</SubNombre>
       </div>
       <ImagenPersonal src={`MarcoAntonioHL.io/public/imagenesInportadas/perfil2.svg`} alt="imagen"></ImagenPersonal>
       <RedesSociales>
@@ -150,7 +171,7 @@ export default function Portada() {
                 <ReferenciaRedSocial href={items.referencia}><LogoCustom ><items.logo/></LogoCustom></ReferenciaRedSocial>
               </SubItem>
               <CajaNombre>
-                <NombreRedSocial>{items.name}</NombreRedSocial>
+                <NombreRedSocial href={items.referencia}>{items.name}</NombreRedSocial>
               </CajaNombre> 
             </Items>
           ))
@@ -158,6 +179,7 @@ export default function Portada() {
       </RedesSociales>
     </Contenedor>
     <Opciones></Opciones>
+    <StackTecnologico></StackTecnologico>
     <Proyects></Proyects>
     <Contact></Contact>
     </>

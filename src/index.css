@@ -9,8 +9,8 @@
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
     /*background:linear-gradient(#284273,#040F0F,rgba(18, 73, 73, 0.32)) ;*/
-    background:linear-gradient(#59816a,#103838,rgba(11, 54, 78, 0.5)) ;
-
+    /*background:linear-gradient(#59816a,#103838,rgba(11, 54, 78, 0.5)) ;*/
+    background-color: #252A33;
   
     font-synthesis: none;
     text-rendering: optimizeLegibility;

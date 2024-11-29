@@ -20,7 +20,7 @@
 }
 .cards{
     width: 100%;
-    border: solid blue 1px;
+    border: solid #B37729 1px;
     margin: 3%;
     display: flex;
     flex-wrap: wrap;

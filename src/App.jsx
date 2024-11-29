@@ -28,9 +28,9 @@ function App() {
         <Route path='/Proyects' element={<Proyects/>} />
         <Route path='/Contact' element={<Contact/>} />
         <Route path='/*' element={<Portada/>}/>
+        
       </Route>
-      
-      
+
     </Routes>
   )
 }

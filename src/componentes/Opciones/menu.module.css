@@ -1,4 +1,9 @@
+.contenedorAcercaDeMi
+{
+    background-color: #2957b354;
+}
 .bloquePadre{
+    
     width:100%;
     display: flex;
     flex-wrap: nowrap;

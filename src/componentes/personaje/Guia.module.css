@@ -5,6 +5,7 @@
 }
 .ContenedorGuia
 {
+  
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -12,7 +13,7 @@
 }
 
 .dibujo{
-    
+   
     width: auto;
     height: auto;
     display: flex;
@@ -49,7 +50,7 @@
     }
 }
 svg:hover{
-    width: 65px;
+    width: 40px;
 }
 .dibujoIzquierda{
 
@@ -64,4 +65,9 @@ svg:hover{
     width: 30px;
     transform: rotate(180deg);  
     
+}
+.imagenSVGderecha
+{
+    width: 30px;
+
 }
