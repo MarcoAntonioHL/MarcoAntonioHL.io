@@ -9,7 +9,7 @@ const ImagenGuia=({direction})=>(
         version="1.1"
         id="svg1"
         sodipodi:docname="guia.svg"
-        className={`${direction? styles.imagenSVG:''}`}
+        className={`${direction? styles.imagenSVG:styles.imagenSVGderecha}`}
         >
        <sodipodi:namedview
           id="namedview1"/>
@@ -33,7 +33,7 @@ const ImagenGuia=({direction})=>(
         version="1.1"
         id="svg1"
         sodipodi:docname="guia.svg"
-        className={`${direction? styles.imagenSVG:''}`}
+        className={`${direction? styles.imagenSVG:styles.imagenSVGderecha}`}
         >
        <sodipodi:namedview
           id="namedview1"/>
@@ -56,7 +56,7 @@ const ImagenGuia=({direction})=>(
         version="1.1"
         id="svg1"
         sodipodi:docname="guia.svg"
-        className={`${direction? styles.imagenSVG:''}`}
+        className={`${direction? styles.imagenSVG:styles.imagenSVGderecha}`}
         >
        <sodipodi:namedview
           id="namedview1"

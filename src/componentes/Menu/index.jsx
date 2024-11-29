@@ -8,30 +8,20 @@ export default function Menu({children}) {
             name:"Presentacion"
         },
         {
-            
             name:"Perfil"
         },
-        /*{
-           
-            name:"Datos"
-        },*/
         {
-    
             name:"Formacion"
         },
         {
-            
             name:"Experiencia"
         },
         {
-           
             name:"Idiomas"
         },
         {
-           
             name:"Intereces"
         }
-    
     ]
     const {posicion,setPosicion}=DataContext()
     

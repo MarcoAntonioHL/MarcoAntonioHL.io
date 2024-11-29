@@ -1,5 +1,4 @@
 import React from 'react'
-import Programacion from './programacion'
 import styles from './experiencia.module.css'
 const historial=[
   {
@@ -36,7 +35,7 @@ export default function Experiencia() {
             <p>{items.description}</p>
           </div>
         ))}
-        <Programacion></Programacion>
+       
       </div>
     </div>
   )
