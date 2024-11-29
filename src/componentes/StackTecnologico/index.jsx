@@ -45,15 +45,15 @@ export default function StackTecnologico() {
     <Card>
         <Titulo> <h2>Stack tecnologico</h2></Titulo>
         <ContenedorTecnologias>
-          <CardItem><img src={`MarcoAntonioHL.io/public/cshat2.svg`} alt="shart" /><CarItemNombre>c#</CarItemNombre></CardItem>
-          <CardItem> <img src={`MarcoAntonioHL.io/public/reactsvg.svg`} alt="react" /><CarItemNombre>React</CarItemNombre></CardItem>
-          <CardItem><img src={`MarcoAntonioHL.io/public/jssvg.svg`} alt="JS" /><CarItemNombre>JavaScript</CarItemNombre></CardItem>
-          <CardItem><img src={`MarcoAntonioHL.io/public/css.svg`} alt="css" /><CarItemNombre>Css</CarItemNombre></CardItem>
-          <CardItem><img src={`MarcoAntonioHL.io/public/htmlSvg.svg`} alt="html" /><CarItemNombre>Html</CarItemNombre></CardItem>
-          <CardItem><img src={`MarcoAntonioHL.io/public/sqlsvg.svg`} alt="sql" /><CarItemNombre>SqlServer</CarItemNombre></CardItem>
-          <CardItem><img src={`MarcoAntonioHL.io/public/git.svg`} alt="git" /><CarItemNombre>Git</CarItemNombre></CardItem>
-          <CardItem><img src={`MarcoAntonioHL.io/public/github.svg`} alt="github" /><CarItemNombre>GitHub</CarItemNombre></CardItem>
-          <CardItem><img src={`MarcoAntonioHL.io/public/netcore.svg`} alt="netcore" /><CarItemNombre>.Net</CarItemNombre></CardItem>
+          <CardItem><img src={`./cshat2.svg`} alt="shart" /><CarItemNombre>c#</CarItemNombre></CardItem>
+          <CardItem> <img src={`./reactsvg.svg`} alt="react" /><CarItemNombre>React</CarItemNombre></CardItem>
+          <CardItem><img src={`./jssvg.svg`} alt="JS" /><CarItemNombre>JavaScript</CarItemNombre></CardItem>
+          <CardItem><img src={`./css.svg`} alt="css" /><CarItemNombre>Css</CarItemNombre></CardItem>
+          <CardItem><img src={`./htmlSvg.svg`} alt="html" /><CarItemNombre>Html</CarItemNombre></CardItem>
+          <CardItem><img src={`./sqlsvg.svg`} alt="sql" /><CarItemNombre>SqlServer</CarItemNombre></CardItem>
+          <CardItem><img src={`./git.svg`} alt="git" /><CarItemNombre>Git</CarItemNombre></CardItem>
+          <CardItem><img src={`./github.svg`} alt="github" /><CarItemNombre>GitHub</CarItemNombre></CardItem>
+          <CardItem><img src={`./netcore.svg`} alt="netcore" /><CarItemNombre>.Net</CarItemNombre></CardItem>
 
             <h6>{informacion[0].frameworks}</h6>
             <h6>{informacion[0].BD}</h6>
