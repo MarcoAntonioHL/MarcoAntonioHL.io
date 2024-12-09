@@ -60,12 +60,12 @@ export default function Contact() {
           }
         </div>
         
-        <div className={styles.contenedorMensaje}>
+        {/*<div className={styles.contenedorMensaje}>
           <input input type='text' placeholder="ingrese mensaje"className={styles.texto} ></input>
         </div>
         <div className={styles.button}>
          <input type='button' value="Enviar"></input>
-        </div>
+        </div>*/}
         
       </div>
     </div>

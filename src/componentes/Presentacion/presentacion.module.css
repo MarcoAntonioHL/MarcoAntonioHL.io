@@ -2,8 +2,8 @@
 .presentacionNombre{
     width: 50%;
     top: 25% ;
-    left: 10%;
-    position: relative;
+    
+    
 }
 h1,h4, h5{
     animation-name: preNombre;
@@ -32,12 +32,14 @@ h1,h4, h5{
     height: auto;
     flex: 0 0 auto;
     display: flex;
-    align-content: space-around;
+          
+
 }
 .imagenPresentacion{
-    width: 150px;
+    
+    width: 100%;
     height: 250px;
-    background-color: aliceblue;
+    
     border-radius: 10px ;
     
 }
