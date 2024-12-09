@@ -18,6 +18,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   @media (max-width:600px) {
     justify-content: center;
   }
@@ -105,6 +106,8 @@
 .imagen
 {
   width: 50%;
+  display: flex;
+  justify-content: center;
   @media (max-width:600px) {
     width: 100%;
     display: flex;

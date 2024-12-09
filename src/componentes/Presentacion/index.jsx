@@ -12,10 +12,10 @@ export default function Presentacion() {
     <div className={styles.bloquePresentacion} id="Presentacion">
         <div className={styles.presentacionNombre}>
             <h1>Marco Antonio Huaman Lonconi<br/></h1>
-            <h5>Developer</h5>
+            <h5>Hola! Conoce mas sobre mí {">>>"} </h5>
         </div>
         <div>
-          <img className={styles.imagenPresentacion} src="MarcoAntonioHL.io/public/imagenesInportadas/imagen.svg" alt="" />
+          <img className={styles.imagenPresentacion} src="./imagenesInportadas/imagen.svg" alt="" />
         </div>
 
     </div>
