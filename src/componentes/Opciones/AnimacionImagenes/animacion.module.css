@@ -1,0 +1,19 @@
+.grafo
+{
+    width: 200px;
+    height: 200px;
+    animation-name: girografo;
+    animation-duration: 11s;
+    animation-delay: 0s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+    
+}
+@keyframes girografo {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 361deg;
+    }
+}

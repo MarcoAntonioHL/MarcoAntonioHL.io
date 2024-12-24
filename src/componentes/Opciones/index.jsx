@@ -17,8 +17,7 @@ export default function Opciones() {
     <ContextMenuGuia>
       <div className={styles.contenedorAcercaDeMi}>
       <Menu>
-        <Guia>
-            <div className={styles.bloquePadre}>
+        <div className={styles.bloquePadre}>
                 <Presentacion></Presentacion>
                 <Perfil></Perfil>
                 {/*<Datos></Datos>*/}
@@ -26,8 +25,18 @@ export default function Opciones() {
                 <Experiencia></Experiencia>
                 <Idiomas></Idiomas>
                 <Intereces></Intereces>
+        </div>
+        {/*<Guia>
+            <div className={styles.bloquePadre}>
+                <Presentacion></Presentacion>
+                <Perfil></Perfil>
+                {/*<Datos></Datos>}
+                <Formacion></Formacion>
+                <Experiencia></Experiencia>
+                <Idiomas></Idiomas>
+                <Intereces></Intereces>
             </div>
-        </Guia>
+        </Guia>*/}
       </Menu>
       </div>
     </ContextMenuGuia>

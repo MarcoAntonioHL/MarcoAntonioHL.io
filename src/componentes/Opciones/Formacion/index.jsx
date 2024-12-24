@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from'./formacion.module.css'
+import { Personaje } from '../AnimacionImagenes'
 const listaformacion=[
   {
     materia:'Ingenieria Informatica y de sistemas',
@@ -20,6 +21,9 @@ export default function Formacion() {
         <p key={index}>{item.materia}<br/>{item.lugar}</p>
       ))
       }
+      </div>
+      <div>
+        <Personaje/>
       </div>
     </div>
   )
