@@ -19,13 +19,16 @@
     justify-content: center;
 }
 .card{
-    width: 30%;
+    width: 31%;
     height: fit-content;
-    margin: 1%;
+    margin: 3px;
     background-color: rgba(87, 115, 122, 0.2);
 
     @media(max-width:600px)
     {
         width: 100%;
     }
+}
+.card p{
+    margin: 2px;
 }

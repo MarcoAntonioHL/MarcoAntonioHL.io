@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './perfil.module.css'
+import { Personaje } from '../AnimacionImagenes'
 
 export default function Perfil() {
   return (
@@ -10,6 +11,9 @@ export default function Perfil() {
           <p>Soy Bachiller en ingenieria informatica y de sistemas, autodidacta con capacidades interpersonales para el trabajo en equipo, solución de problemas 
             y buen manejo de palabras, abierto a obtener nuevos conocimientos y habilidades e innovar en el área de la tecnología. 
           </p>
+        </div>
+        <div className={styles.imgPersonaje}>
+          <Personaje></Personaje>
         </div>
       </div>
     </>

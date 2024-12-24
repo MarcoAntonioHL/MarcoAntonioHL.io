@@ -1,7 +1,7 @@
 
 .cardPerfil{
     width: 100%;
-    display: block;
+    display: flex;
     flex: 0 0 auto;
     flex-wrap: wrap;
     
@@ -14,7 +14,7 @@
 }
 .card{
     width: 40%;
-    
+    height: min-content;
     /*border: 3px solid rebeccapurple;*/
     background-color: rgba(87, 115, 122, 0.2);
     border-radius: 3%;
@@ -22,5 +22,17 @@
     justify-content: center;
     flex-wrap: wrap;
     padding: 30px;
+
+    @media (max-width:600px) {
+        width: 100%;
+    }
     
+}
+/***imagenes**/
+.imgPersonaje
+{
+    width: 55%;
+    height: min-content;
+    display: flex;
+    justify-content: center;
 }
