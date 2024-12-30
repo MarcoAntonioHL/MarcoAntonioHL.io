@@ -16,11 +16,11 @@ export default function Menu({children}) {
         {
             name:"Experiencia"
         },
-        {
+        /*{
             name:"Idiomas"
-        },
+        },*/
         {
-            name:"Intereces"
+            name:"Hobbies"
         }
     ]
     const {posicion,setPosicion}=DataContext()
@@ -35,9 +35,11 @@ export default function Menu({children}) {
     <nav className={styles.menu}>
         {
             listaVista.map((objeto,index)=>(
-                <li key={index} className={styles.items}>
-                    <a href={`#${objeto.name}`} onClick={select} className={styles.nombreItems}>{objeto.name}</a>
-                </li>
+                <a key={index} href={`#${objeto.name}`} onClick={select} className={styles.items}>
+                    <li  className={styles.nombreItems}>
+                        {objeto.name}
+                    </li>
+                </a>
             ))
         }
     </nav>

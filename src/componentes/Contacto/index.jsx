@@ -37,7 +37,7 @@ const enlaces=[
 
 export default function Contact() {
   return (
-    <div className={styles.ContenedorContactos}>
+    <div className={styles.ContenedorContactos} id='Contact'>
       <div>
         <h2 className={styles.tituloContactos}>Contactame</h2>
       </div>

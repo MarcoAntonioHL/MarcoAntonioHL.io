@@ -1,3 +1,4 @@
+
 .bloqueIntereces{
     width: 100%;
     display: block;
@@ -14,4 +15,53 @@
     justify-content: center;
     margin: 2%;
 
+}
+/**Hobbies**/
+.contenedor{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tituloHobbies{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.targeta{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.imgHobbiesContenedor{
+    animation-name: imghobbie;
+    position: relative;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;  
+}
+.imgHobbies
+{
+    width: 40px;
+    
+}
+@keyframes imghobbie{
+    0%{
+        top: 4px;
+    }
+    25%{
+        top:-8px;
+    }
+    50%{
+        top: 8px;
+    }
+    75%{
+        top: -8px;
+
+    }
+    100%{
+        top: 4px;
+    }
 }

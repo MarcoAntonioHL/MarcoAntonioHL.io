@@ -22,13 +22,12 @@ function App() {
   
   return (
     <Routes>
-      <Route path='/' element={<MenuPortada/>}>
+      <Route path='/' element={<Portada/>}>
         <Route path='/' element={<Portada/>} />
         <Route path='/About' element={<Opciones/>} />
         <Route path='/Proyects' element={<Proyects/>} />
         <Route path='/Contact' element={<Contact/>} />
         <Route path='/*' element={<Portada/>}/>
-        
       </Route>
 
     </Routes>
