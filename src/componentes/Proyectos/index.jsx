@@ -17,14 +17,14 @@ export default function Proyects() {
   //marcamos la posicion de imagen dereca o imagen izquierda
   const [estilo,setStilo]=useState(0)
   return (
-    <div className={styles.ContenedorProyectos}>
+    <div className={styles.ContenedorProyectos} id='Proyects'>
     <h2 className={styles.titulo}>Proyectos</h2>
     <div className={styles.Contenedor}>
       <Lineadetiempo></Lineadetiempo>
       <section className={styles.SeccionDerecha}>
         {proyectos.map((item,index)=>(index%2===0?
         
-          <div className={styles.cards}>
+          <div key={index} className={styles.cards}>
             <div className={styles.cardImagen}>
               {item.imagen}
             </div>
@@ -33,7 +33,7 @@ export default function Proyects() {
             </div>
           </div>
           : 
-          <div className={styles.cards}>
+          <div key={index} className={styles.cards}>
             <div className={styles.Descripcion}>
               {item.descripcion}
             </div>

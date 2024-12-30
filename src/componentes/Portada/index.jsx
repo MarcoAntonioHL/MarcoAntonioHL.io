@@ -7,6 +7,8 @@ import Opciones from '../Opciones';
 import Proyects from '../Proyectos';
 import Contact from '../Contacto';
 import StackTecnologico from '../StackTecnologico';
+import MenuPortada from '../MenuPortada';
+import ContextMenuGuia from '../../layout/contextMenuGuia';
 const Contenedor=styled.div`
     width: 100%;
     height: 100vh;
@@ -156,32 +158,37 @@ const enlaces=[
 export default function Portada() {
   let subnombre="<./>"
   return (
-    <>
-    <Contenedor>
-      <div>
-        <Nombre>Marco Antonio Huaman Lonconi </Nombre>
-        <SubNombre>Developer {subnombre}</SubNombre>
-      </div>
-      <ImagenPersonal src={`./imagenesInportadas/perfil2.svg`} alt="imagen"></ImagenPersonal>
-      <RedesSociales>
-        {
-          enlaces.map((items,index)=>(
-            <Items key={index}>
-              <SubItem>
-                <ReferenciaRedSocial href={items.referencia}><LogoCustom ><items.logo/></LogoCustom></ReferenciaRedSocial>
-              </SubItem>
-              <CajaNombre>
-                <NombreRedSocial href={items.referencia}>{items.name}</NombreRedSocial>
-              </CajaNombre> 
-            </Items>
-          ))
-        }
-      </RedesSociales>
-    </Contenedor>
-    <Opciones></Opciones>
-    <StackTecnologico></StackTecnologico>
-    <Proyects></Proyects>
-    <Contact></Contact>
-    </>
+    <ContextMenuGuia>
+      <MenuPortada>
+        
+        <Contenedor>
+          <div id='Inicio'>
+            <Nombre>Marco Antonio Huaman Lonconi </Nombre>
+            <SubNombre>Developer {subnombre}</SubNombre>
+          </div>
+          <ImagenPersonal src={`./imagenesInportadas/perfil2.svg`} alt="imagen"></ImagenPersonal>
+          <RedesSociales>
+            {
+              enlaces.map((items,index)=>(
+                <Items key={index}>
+                  <SubItem>
+                    <ReferenciaRedSocial href={items.referencia}><LogoCustom ><items.logo/></LogoCustom></ReferenciaRedSocial>
+                  </SubItem>
+                  <CajaNombre>
+                    <NombreRedSocial href={items.referencia}>{items.name}</NombreRedSocial>
+                  </CajaNombre> 
+                </Items>
+              ))
+            }
+          </RedesSociales>
+        </Contenedor>
+        
+        <Opciones></Opciones>
+        <StackTecnologico></StackTecnologico>
+        <Proyects></Proyects>
+        <Contact></Contact>
+        
+      </MenuPortada>
+    </ContextMenuGuia>
   )
 }

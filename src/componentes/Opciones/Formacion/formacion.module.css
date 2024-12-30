@@ -14,9 +14,46 @@
   display: flex;
   justify-content: center;
 }
+.formacionBody
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .card{
   width: 40%;
+  margin: 2px;
   height: fit-content;
   background-color: rgba(87, 115, 122, 0.2);
+}
 
+.personaje{
+
+  width: 58%;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width:768px) {
+  .card{
+    width: 100%;
+  }
+  .personaje{
+    width: 100%;
+  }
+}
+
+.idiomas
+{
+  
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.idiomas div{
+  
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }

@@ -1,9 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { Link, Outlet } from 'react-router-dom'
 import styles from './menuPortada.module.css'
 import { MdOutlineMenuOpen } from "react-icons/md";
-import styled from 'styled-components';
-export default function MenuPortada() {
+export default function MenuPortada({children}) {
 
   const [ancho,setAncho]=useState(window.innerWidth)
 
@@ -30,6 +28,7 @@ export default function MenuPortada() {
     }
   ,[ancho])
 
+
   return (
     <>
     <div className={styles.contenedorMenuPortada} >
@@ -42,22 +41,29 @@ export default function MenuPortada() {
           {/*<MdOutlineMenuOpen className={styles.barras} onClick={dropdownOpen}/> */}
           <div  className={`${click? styles.itemsMenuActive:styles.itemsSandwich}`}> 
               <li>
-                  <Link to='/'className={styles.Link}>Inicio</Link>
+                  {/*<Link to='/'className={styles.Link}>Inicio</Link>*/}
+                  <a href="#Inicio" className={styles.Link}>Inicio</a>
               </li>
               <li>
-                  <Link to='/About'className={styles.Link}>Acerca de mi</Link>
+                  {/*<Link to='/About'className={styles.Link}>Acerca de mi</Link>*/}
+                  <a href="#About" className={styles.Link}>Acerca de mi</a>
+              
               </li>
               <li>
-                  <Link to='/Proyects'className={styles.Link}>Proyectos</Link>
+                  {/*<Link to='/Proyects'className={styles.Link}>Proyectos</Link>*/}
+                  <a href="#Proyects" className={styles.Link}>Proyectos</a>
+              
               </li>
               <li>
-                  <Link to='/Contact'className={styles.Link}>Contacto</Link>
+                  {/*<Link to='/Contact'className={styles.Link}>Contacto</Link>*/}
+                  <a href="#Contact" className={styles.Link}>Contacto</a>
+              
               </li>
             </div>
           </>
           :
             <div  className={`${click? styles.itemsMenu:styles.itemsMenuActive}`}> 
-              <li>
+              {/*<li>
                   <Link to='/'className={styles.Link}>Inicio</Link>
               </li>
               <li>
@@ -68,13 +74,34 @@ export default function MenuPortada() {
               </li>
               <li>
                   <Link to='/Contact'className={styles.Link}>Contacto</Link>
+              </li>*/}
+              
+              <li>
+                  {/*<Link to='/'className={styles.Link}>Inicio</Link>*/}
+                  <a href="#Inicio" className={styles.Link}>Inicio</a>
+              </li>
+              <li>
+                  {/*<Link to='/About'className={styles.Link}>Acerca de mi</Link>*/}
+                  <a href="#About" className={styles.Link}>Acerca de mi</a>
+              
+              </li>
+              <li>
+                  {/*<Link to='/Proyects'className={styles.Link}>Proyectos</Link>*/}
+                  <a href="#Proyects" className={styles.Link}>Proyectos</a>
+              
+              </li>
+              <li>
+                  {/*<Link to='/Contact'className={styles.Link}>Contacto</Link>*/}
+                  <a href="#Contact" className={styles.Link}>Contacto</a>
+              
               </li>
             </div>
           
         }
       </nav>
+      {children}
     </div>
-    <Outlet/>
+   
     </>
   )
 }

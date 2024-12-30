@@ -11,7 +11,7 @@
 .items{
     margin: 0;
     padding: 1%;
-    
+    text-decoration: none ;
     border-radius: 8%;
     /*border: 1px solid black;*/
 }
@@ -27,10 +27,15 @@
     font-family: Helvetica,Arial,sans-serif;
     color:#1b90beb7;
     text-decoration: none;
+    
+    
 }
+
+
 
 @media (max-width: 576px) {
     .menu{
+       
         width: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -40,7 +45,7 @@
         position: relative;
         
     }
-    li{
+    a{
         width: 100%;
         display: flex;
         justify-content: center;
@@ -48,7 +53,7 @@
         
         
     }
-    li:hover{
+    a:hover{
         background-color:#48482a87 ;
     }
 }
