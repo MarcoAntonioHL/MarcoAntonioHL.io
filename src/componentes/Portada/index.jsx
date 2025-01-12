@@ -123,6 +123,18 @@ const LogoCustom=styled.div`
     transform:scale(1.5)
   }
 `
+
+const ButtonDescargaPDF=styled.button`
+  width:30%;
+  height: 40px;
+  background-color: #B37729;
+  color: white;
+  border-radius: 10% 20% 20% 20%;
+  &:hover{
+    background-color: #b37729b2;
+  }
+  
+`
 const enlaces=[
   {
     logo:FaFacebook,
@@ -165,6 +177,7 @@ export default function Portada() {
           <div id='Inicio'>
             <Nombre>Marco Antonio Huaman Lonconi </Nombre>
             <SubNombre>Developer {subnombre}</SubNombre>
+            <a href="https://drive.google.com/file/d/1qchg3Ym_3s9unSi0hl0EdjGsVzpa4yCB/view?usp=sharing"><ButtonDescargaPDF>Descargar CV .pdf</ButtonDescargaPDF></a>
           </div>
           <ImagenPersonal src={`./imagenesInportadas/perfil2.svg`} alt="imagen"></ImagenPersonal>
           <RedesSociales>

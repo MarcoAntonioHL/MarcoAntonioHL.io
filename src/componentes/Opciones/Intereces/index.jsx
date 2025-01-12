@@ -1,12 +1,14 @@
 import React from 'react'
 import styles from './intereces.module.css'
 const voluntareado=[
-  {
-    description:'Miembro del grupo del circulo de estudios Wichaiman cusco',
-  },
+  
   {
     description:'Asistencia en conferencias:',
     subdescription:[
+      {
+        descripcion:'Miembro del grupo del circulo de estudios Wichaiman cusco',
+        date:''
+      },
       {
         descripcion:'Cemtro de altos estudios de negocio y economia (CAENE)',
         date:'agosto 2022'
@@ -55,7 +57,7 @@ export default function Intereces() {
             </div>
           ))
         }
-        <p>Me gusta participar de actividades deportivas y/o reacreativas 
+        <p>Me gusta ser parte de actividades deportivas y/o reacreativas 
           que ayudan a mi desarrollo personal.
         </p>
       </div>
