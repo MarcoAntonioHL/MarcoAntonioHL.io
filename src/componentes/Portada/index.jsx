@@ -177,7 +177,7 @@ export default function Portada() {
           <div id='Inicio'>
             <Nombre>Marco Antonio Huaman Lonconi </Nombre>
             <SubNombre>Developer {subnombre}</SubNombre>
-            <a href="https://drive.google.com/file/d/1qchg3Ym_3s9unSi0hl0EdjGsVzpa4yCB/view?usp=sharing"><ButtonDescargaPDF>Descargar CV .pdf</ButtonDescargaPDF></a>
+            <a href="https://drive.google.com/file/d/1qchg3Ym_3s9unSi0hl0EdjGsVzpa4yCB/view?usp=sharing" style={{textDecoration:"none"}}><ButtonDescargaPDF>Descargar CV .pdf</ButtonDescargaPDF></a>
           </div>
           <ImagenPersonal src={`./imagenesInportadas/perfil2.svg`} alt="imagen"></ImagenPersonal>
           <RedesSociales>

@@ -4,12 +4,20 @@ import styles from './index.module.css'
 
 const proyectos=[
   {
-    imagen:'imagen1',
-    descripcion:'descripcion 1',
+    imagen:['./portafolio1.png'],
+    descripcion:'Portafolio personal desarrollado con React 18.2 , css.',
   },
   {
-    imagen:'imagen 2',
-    descripcion:'descripcion2',
+    imagen:['./cursosCapacitacion1.png','./cursosCapacitacion2.png'],
+    descripcion:`Modulos CRUD para que cada trabajador de la empresa Electro Sur Este pueda ver
+      la informacion de los cursos de capacitacion asignados y realisar la encuesta necesaria. Desarrollado en react 18.2
+      , estilos Reactrap v8, Api .Net 6 y SqlServer para las consultas.` ,
+  },
+  {
+    imagen:['API'],
+    descripcion:`API de interoperatibidad para la comunicacion entre entidades 
+    dministrativas publicas,aquellas relacionadas a la empresa Electro Sur Este. Esta se implemento con 
+    el objetivo de consumir servicion SOAP, Desarrollado en ASP.Net utilizando una arquitectura DDD(domain driven-design)`
   }
 
 ]
@@ -26,7 +34,13 @@ export default function Proyects() {
         
           <div key={index} className={styles.cards}>
             <div className={styles.cardImagen}>
-              {item.imagen}
+              {
+                item.imagen.map(link=>
+                  (
+                    <img className={styles.preImagen} src={link} alt="img" />
+                  )
+                )
+              }
             </div>
             <div className={styles.Descripcion}>
               {item.descripcion}
@@ -38,7 +52,14 @@ export default function Proyects() {
               {item.descripcion}
             </div>
             <div className={styles.cardImagen}>
-              {item.imagen}
+              {
+                item.imagen.map(link=>
+                  (
+                    <img className={styles.preImagen} src={link} alt="img" />
+                    
+                  )
+                )
+              }
             </div>
           </div>
         )
