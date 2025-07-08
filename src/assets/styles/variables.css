@@ -1,0 +1,62 @@
+/*:root{
+    --color-primary:#374e7a;
+    --color-secondary:#00c896;
+    --color-background:#252A33;
+    --color-text:#1a1a1a;
+    
+    --font-base: 'Inter', sans-serif;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 32px;
+}
+[data-theme="dark"]{
+    --color-background:#252A33;
+    --color-text: #f1f1f1;
+    --color-primary: #3f83f8;
+}*/
+
+
+:root {
+  /* 🎨 Colores base */
+  --color-primary: #4f46e5; /* Indigo */
+  --color-secondary: #10b981; /* Emerald */
+  --color-accent: #f59e0b; /* Amber */
+  --color-danger: #ef4444; /* Red */
+  --color-warning: #facc15; /* Yellow */
+  --color-info: #3b82f6; /* Blue */
+
+  /* 🌓 Modo claro */
+  --color-background: #ffffff;
+  --color-surface: #f9fafb;
+  --color-text: #1f2937;
+  --color-muted: #6b7280;
+
+  /* 🔤 Tipografías */
+  --font-base: 'Inter', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+
+  /* 📐 Espaciado */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* 🟦 Bordes */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 16px;
+
+  /* ⏱️ Transiciones */
+  --transition-fast: 0.2s;
+  --transition-normal: 0.4s;
+  --transition-slow: 0.6s;
+}
+
+/* 🌙 Modo oscuro */
+[data-theme="dark"] {
+  --color-background: #1f2937;
+  --color-surface: #374151;
+  --color-text: #f9fafb;
+  --color-muted: #9ca3af;
+}
