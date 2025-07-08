@@ -54,8 +54,8 @@ export default function StackTecnologico() {
           <CardItem><img src={`./git.svg`} alt="git" /><CarItemNombre>Git</CarItemNombre></CardItem>
           <CardItem><img src={`./github.svg`} alt="github" /><CarItemNombre>GitHub</CarItemNombre></CardItem>
           <CardItem><img src={`./netcore.svg`} alt="netcore" /><CarItemNombre>.Net</CarItemNombre></CardItem>
-          <CardItem><img src={`./camunda-logo.png`} alt="camunda" /><CarItemNombre>Camunda</CarItemNombre></CardItem>
-          <CardItem><img src={`./bizagi-logo.png`} alt="bizagi" /><CarItemNombre>Bizagi</CarItemNombre></CardItem>
+          <CardItem><img src={`./camunda-logo.png`} alt="camunda" width='20%' height='50px' /><CarItemNombre>Camunda</CarItemNombre></CardItem>
+          <CardItem><img src={`./bizagi-logo.png`} alt="bizagi" width='20%' height='50px' /><CarItemNombre>Bizagi</CarItemNombre></CardItem>
 
             <h6>{informacion[0].frameworks}</h6>
             <h6>{informacion[0].BD}</h6>
