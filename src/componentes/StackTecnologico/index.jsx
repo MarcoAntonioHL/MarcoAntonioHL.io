@@ -43,7 +43,7 @@ const informacion=[
 export default function StackTecnologico() {
   return (
     <Card>
-        <Titulo> <h2>Stack tecnologico</h2></Titulo>
+        <Titulo> <h2>Stack Tecnológico</h2></Titulo>
         <ContenedorTecnologias>
           <CardItem><img src={`./cshat2.svg`} alt="shart" /><CarItemNombre>c#</CarItemNombre></CardItem>
           <CardItem> <img src={`./reactsvg.svg`} alt="react" /><CarItemNombre>React</CarItemNombre></CardItem>
@@ -54,6 +54,8 @@ export default function StackTecnologico() {
           <CardItem><img src={`./git.svg`} alt="git" /><CarItemNombre>Git</CarItemNombre></CardItem>
           <CardItem><img src={`./github.svg`} alt="github" /><CarItemNombre>GitHub</CarItemNombre></CardItem>
           <CardItem><img src={`./netcore.svg`} alt="netcore" /><CarItemNombre>.Net</CarItemNombre></CardItem>
+          <CardItem><img src={`./camunda-logo.png`} alt="camunda" /><CarItemNombre>Camunda</CarItemNombre></CardItem>
+          <CardItem><img src={`./bizagi-logo.png`} alt="bizagi" /><CarItemNombre>Bizagi</CarItemNombre></CardItem>
 
             <h6>{informacion[0].frameworks}</h6>
             <h6>{informacion[0].BD}</h6>

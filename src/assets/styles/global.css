@@ -1,0 +1,14 @@
+body {
+  font-family: var(--font-base);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+
+button {
+  background-color: var(--color-primary);
+  color: white;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius-md);
+  transition: background-color var(--transition-fast);
+}
