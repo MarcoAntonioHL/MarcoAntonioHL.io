@@ -33,7 +33,7 @@ export default function Formacion() {
             <p>{"(CID)"} Universidad Nacional San Antonio Abad del Cusco</p>
             <div className={styles.idiomas}>
               <div>
-                <img src="./eeuu.png" alt="flag" style={{width:"50px"}} />
+                <img src={`${import.meta.env.BASE_URL}eeuu.png`} alt="flag" style={{width:"50px"}} />
                 <p style={{fontSize:"15px",margin:"0"}}>Ingles</p>
               </div>
               <div>

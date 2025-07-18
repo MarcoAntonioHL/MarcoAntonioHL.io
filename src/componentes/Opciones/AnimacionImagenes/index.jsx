@@ -5,7 +5,7 @@ export const Personaje=()=>
 {
     return(
         <>
-            <img className={styles.grafo} src="./grafo.png" alt="" />
+            <img className={styles.grafo} src={`${import.meta.env.BASE_URL}grafo.png`} alt="" />
            
         </>
     )
