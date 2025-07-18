@@ -37,7 +37,7 @@ export default function MenuPortada({children}) {
           ancho<600?
           <>
           
-          <img src="./list.svg" alt="" className={styles.imgSandwich} onClick={dropdownOpen} />
+          <img src={`${import.meta.env.BASE_URL}list.svg`} alt="" className={styles.imgSandwich} onClick={dropdownOpen} />
           {/*<MdOutlineMenuOpen className={styles.barras} onClick={dropdownOpen}/> */}
           <div  className={`${click? styles.itemsMenuActive:styles.itemsSandwich}`}> 
               <li>
