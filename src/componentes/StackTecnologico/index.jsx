@@ -47,7 +47,7 @@ export default function StackTecnologico() {
         <Titulo> <h2>Stack Tecnológico</h2></Titulo>
         <ContenedorTecnologias>
           <CardItem><img src={`${import.meta.env.BASE_URL}cshat2.svg`} alt="shart" /><CarItemNombre>c#</CarItemNombre></CardItem>
-          <CardItem> <img src={`${import.meta.env.BASE_URL}reactsvg.svg`} alt="react" /><CarItemNombre>React</CarItemNombre></CardItem>
+          <CardItem><img src={`${import.meta.env.BASE_URL}reactsvg.svg`} alt="react" /><CarItemNombre>React</CarItemNombre></CardItem>
           <CardItem><img src={`${import.meta.env.BASE_URL}jssvg.svg`} alt="JS" /><CarItemNombre>JavaScript</CarItemNombre></CardItem>
           <CardItem><img src={`${import.meta.env.BASE_URL}css.svg`} alt="css" /><CarItemNombre>Css</CarItemNombre></CardItem>
           <CardItem><img src={`${import.meta.env.BASE_URL}htmlSvg.svg`} alt="html" /><CarItemNombre>Html</CarItemNombre></CardItem>
