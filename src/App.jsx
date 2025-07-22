@@ -1,15 +1,8 @@
-import { useEffect, useState } from 'react'
-
-import styles from './App.module.css'
-import Opciones from './componentes/Opciones'
-import ContextMenuGuia from './layout/contextMenuGuia'
-import Ruta from './routes'
-import Menu from './componentes/Menu'
-import Portada from './componentes/Portada'
+import Opciones from './presentation/components/Opciones'
+import Portada from './presentation/components/Portada'
 import { Route, Routes } from 'react-router-dom'
-import Proyects from './componentes/Proyectos'
-import Contact from './componentes/Contacto'
-import MenuPortada from './componentes/MenuPortada'
+import Proyects from './presentation/components/Proyectos'
+import Contact from './presentation/components/Contacto'
 import "bootstrap"
 
 function App() {

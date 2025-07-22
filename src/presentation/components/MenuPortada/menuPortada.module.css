@@ -1,12 +1,25 @@
 
+.contenedorMenuPortada
+{
+    width: 100%;
+}
+
+@media(max-width:600px){
+    .contenedorMenuPortada{
+        width: 100%;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
 .portadaMenu{
     width: 100%;
-    display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     margin:1%;
-    list-style: none;
     position: relative;
+
 }
 
 .Link{
@@ -47,7 +60,8 @@
     li{
         margin: 0 2% 0 2%;
     }
-    @media(max-width:600px){
+@media(max-width:600px){
+    .itemsMenuActive{
         width: 100%;
         display:flex;
         flex-wrap: wrap ;
@@ -55,11 +69,11 @@
         margin-left:auto;
         margin-right: auto;
         list-style: none;
-        top: 30%;
-        left: 0;
-        right: 0;
         position: relative;
+  
     }
+
+}
 }
 /** ICONO**/
 .barras{
@@ -71,3 +85,4 @@
     fill: #B39929;
     
 }
+/*BLOQUES*/

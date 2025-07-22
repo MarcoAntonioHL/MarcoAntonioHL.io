@@ -5,7 +5,7 @@
     justify-content: center;
     margin:1%;
     list-style: none;
-    position: relative;
+    
     
 }
 .items{
@@ -35,22 +35,17 @@
 
 @media (max-width: 576px) {
     .menu{
-       
         width: 100%;
+        margin-top: 90px;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin:1%;
         list-style: none;
-        position: relative;
-        
+        word-wrap: break-word;
     }
     a{
         width: 100%;
-        display: flex;
+        display: flex;  
         justify-content: center;
         border-radius: 5%;
-        
         
     }
     a:hover{

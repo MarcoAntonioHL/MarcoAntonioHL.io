@@ -99,7 +99,9 @@ export default function MenuPortada({children}) {
           
         }
       </nav>
-      {children}
+      <div>
+        {children}
+      </div>
     </div>
    
     </>

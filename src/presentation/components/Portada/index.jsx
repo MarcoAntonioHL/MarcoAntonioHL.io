@@ -1,24 +1,23 @@
-import React from 'react'
 import styled from 'styled-components'
 import { FaGithub,FaInstagram,FaFacebook,FaWhatsapp, FaLinkedin  } from "react-icons/fa";
 import { MdEmail } from 'react-icons/md';
-import { ButtonSimple } from '../../utils';
 import Opciones from '../Opciones';
 import Proyects from '../Proyectos';
 import Contact from '../Contacto';
 import StackTecnologico from '../StackTecnologico';
 import MenuPortada from '../MenuPortada';
 import ContextMenuGuia from '../../layout/contextMenuGuia';
+import styles from './portada.module.css';
+import RedesSocialesModule from '../../layout/redesSociales';
+
 const Contenedor=styled.div`
     width: 100%;
-    height: 100vh;
     display: grid;
     grid-template-columns: 50% 30% 20%;
     /*grid-template-columns: repeat(auto-fill,minmax(300px,1fr));*/
-    align-items: flex-start;
     @media(max-width: 600px){
-      grid-template-columns: 100% ;
-      
+      width: 100%;
+      grid-template-columns:1fr;
     }
 
 `
@@ -70,13 +69,16 @@ const ImagenPersonal=styled.img`
     width: 100%;
     height: 210px;
     display: flex;
+    max-width: 100%;
    
 `
 const RedesSociales=styled.li`
+    width: 100%;
     list-style: none;
     display:flex;
     flex-direction:column;
     align-items: center;
+
 `
 const Items=styled.div`
 
@@ -110,12 +112,6 @@ const NombreRedSocial=styled.a`
   text-decoration: none;
 
 `
-const CustomNombreRedSocial=styled.h5`
-  
-  :hover{
-    color: #B37729;
-  }
-`
 const LogoCustom=styled.div`
   color:white;
   &:hover{
@@ -135,40 +131,14 @@ const ButtonDescargaPDF=styled.button`
   }
   
 `
-const enlaces=[
-  {
-    logo:FaFacebook,
-    name:'Facebook',
-    referencia:'https://web.facebook.com/marcoantonio.huamanlonconi/',
-  },
-  {
-    logo:FaInstagram,
-    name:'Instagram',
-    referencia:'https://www.instagram.com/marcohlantonio/',
-  },
-  {
-    logo:FaGithub,
-    name:'Github',
-    referencia:'https://github.com/MarcoAntonioHL',
-  },
-  {
-    logo:FaWhatsapp,
-    name:'whatsaap',
-    referencia:'https://wa.me/928751897/?text=urlencodedtext',
-  },
-  {
-    logo:FaLinkedin,
-    name:'Linkedin',
-    referencia:'https://www.linkedin.com/in/marco-antonio-huaman-lonconi-2a31a7270/',
-  },
-  {
-    logo:MdEmail,
-    name:'Correo',
-    referencia:'marco.hl9antonio@gmail.com',
-  }
-]
 export default function Portada() {
   let subnombre="<./>"
+  let proyectos="+3";
+  let experiencia="+1";
+  let descripción=`Soy bachiller en Ingeniería Informática y de Sistemas, con un enfoque autodidacta y colaborativo.
+   Me destaco por mi capacidad para adaptarme a nuevas tecnologías y resolver problemas con creatividad y criterio técnico.
+  Tengo mayor experiencia desarrollando con React, pero también he trabajado en proyectos que involucran backend, bases de datos 
+  y otras herramientas del ecosistema web. Siempre estoy abierto a aprender, mejorar y aportar valor a través de la tecnología`;
   return (
     <ContextMenuGuia>
       <MenuPortada>
@@ -177,23 +147,21 @@ export default function Portada() {
           <div id='Inicio'>
             <Nombre>Marco Antonio Huaman Lonconi </Nombre>
             <SubNombre>Developer {subnombre}</SubNombre>
-            <a href="https://drive.google.com/file/d/1qchg3Ym_3s9unSi0hl0EdjGsVzpa4yCB/view?usp=sharing" style={{textDecoration:"none"}}><ButtonDescargaPDF>Descargar CV .pdf</ButtonDescargaPDF></a>
+            <a className={styles.download} href="https://drive.google.com/file/d/1qchg3Ym_3s9unSi0hl0EdjGsVzpa4yCB/view?usp=sharing" style={{textDecoration:"none"}}><ButtonDescargaPDF>Descargar CV .pdf</ButtonDescargaPDF></a>
+            <p className={styles.descripcion}>{descripción}</p>
           </div>
           <ImagenPersonal src={`./imagenesInportadas/perfil2.svg`} alt="imagen"></ImagenPersonal>
-          <RedesSociales>
-            {
-              enlaces.map((items,index)=>(
-                <Items key={index}>
-                  <SubItem>
-                    <ReferenciaRedSocial href={items.referencia}><LogoCustom ><items.logo/></LogoCustom></ReferenciaRedSocial>
-                  </SubItem>
-                  <CajaNombre>
-                    <NombreRedSocial href={items.referencia}>{items.name}</NombreRedSocial>
-                  </CajaNombre> 
-                </Items>
-              ))
-            }
-          </RedesSociales>
+          <div className={styles.marcadores}>
+            <div name="marcadores">
+              <h1>{proyectos}</h1>
+              <p>Proyectos</p>
+            </div>
+            <div name="marcadores">
+              <h1>{experiencia}</h1>
+              <p>años de Experiencia</p>
+            </div>
+          </div>
+          <RedesSocialesModule></RedesSocialesModule>
         </Contenedor>
         
         <Opciones></Opciones>
