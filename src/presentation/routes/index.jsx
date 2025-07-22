@@ -1,7 +1,7 @@
 import React, { Children } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Proyects from "../componentes/Proyectos";
-import Contact from "../componentes/Contacto";
+import Proyects from "../../components/Proyectos";
+import Contact from "../../components/Contacto";
 
 const Ruta=()=>{
     return(

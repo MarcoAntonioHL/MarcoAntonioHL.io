@@ -1,0 +1,104 @@
+/****contenedor Principal****/
+.ContenedorContactos
+{
+  width: 100%;
+  height: 100vh;
+}
+/***titulo**/
+.tituloContactos
+{
+  width: 100%;
+  font-family:Helvetica,Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+/**contenedor body***/
+.bodyContactos
+{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  @media (max-width:600px) {
+    justify-content: center;
+  }
+ 
+}
+/****divicion body**/
+.contenedorCards{
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+/****Imagen***/
+.imagen
+{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  @media (max-width:600px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+.imagen img{
+  border-radius: 100%;
+}
+/*FORMULARIO Y CONTACTAOS*/
+.formularioContactos{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  @media (max-width:600px) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+/*FORMULARIO*/
+.formulario {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+
+}
+input {
+    width: 100%;
+    margin: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 2px solid #B39929;
+}
+textarea {
+    width:100%;
+    height: 100px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #B39929;
+    resize: none;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+.botonEnviar {
+    background-color: #B39929;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+/*Redes sociales*/
+.redesSociales {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+}

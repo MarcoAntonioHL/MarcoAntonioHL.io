@@ -1,0 +1,16 @@
+.descripcion{
+    background-color: rgba(255,255,255,0.05);
+    text-align: center;
+}
+.marcadores{
+    display: flex;
+    flex-direction: column;
+}
+
+@media(max-width:600px) {
+    .marcadores{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+        
+}   
