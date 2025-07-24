@@ -219,7 +219,7 @@ width: 50%;
   
 `;function Jl(){return m.jsx(Lm,{children:m.jsxs(HE,{children:[m.jsxs(WE,{children:[m.jsxs("div",{id:"Inicio",children:[m.jsx(KE,{children:"Marco Antonio Huaman Lonconi "}),m.jsxs(YE,{children:["Developer ","<./>"]}),m.jsx("a",{className:Zl.download,href:"https://drive.google.com/file/d/1qchg3Ym_3s9unSi0hl0EdjGsVzpa4yCB/view?usp=sharing",style:{textDecoration:"none"},children:m.jsx(QE,{children:"Descargar CV .pdf"})}),m.jsx("p",{className:Zl.descripcion,children:`Soy bachiller en Ingeniería Informática y de Sistemas, con un enfoque autodidacta y colaborativo.
    Me destaco por mi capacidad para adaptarme a nuevas tecnologías y resolver problemas con creatividad y criterio técnico.
-  Tengo mayor experiencia desarrollando con React, pero también he trabajado en proyectos que involucran backend, bases de datos 
+  Tengo mayor experiencia desarrollando con React,.Net, pero también he trabajado en proyectos que involucran backend, bases de datos 
   y otras herramientas del ecosistema web. Siempre estoy abierto a aprender, mejorar y aportar valor a través de la tecnología`})]}),m.jsx(GE,{src:"./imagenesInportadas/perfil2.svg",alt:"imagen"}),m.jsxs("div",{className:Zl.marcadores,children:[m.jsxs("div",{name:"marcadores",children:[m.jsx("h1",{children:"+3"}),m.jsx("p",{children:"Proyectos"})]}),m.jsxs("div",{name:"marcadores",children:[m.jsx("h1",{children:"+1"}),m.jsx("p",{children:"años de Experiencia"})]})]}),m.jsx(sg,{})]}),m.jsx(ng,{}),m.jsx(IE,{}),m.jsx(og,{}),m.jsx(ug,{})]})})}/**
  * @remix-run/router v1.14.0
  *
