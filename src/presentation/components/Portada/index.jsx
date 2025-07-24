@@ -137,7 +137,7 @@ export default function Portada() {
   let experiencia="+1";
   let descripción=`Soy bachiller en Ingeniería Informática y de Sistemas, con un enfoque autodidacta y colaborativo.
    Me destaco por mi capacidad para adaptarme a nuevas tecnologías y resolver problemas con creatividad y criterio técnico.
-  Tengo mayor experiencia desarrollando con React, pero también he trabajado en proyectos que involucran backend, bases de datos 
+  Tengo mayor experiencia desarrollando con React,.Net, pero también he trabajado en proyectos que involucran backend, bases de datos 
   y otras herramientas del ecosistema web. Siempre estoy abierto a aprender, mejorar y aportar valor a través de la tecnología`;
   return (
     <ContextMenuGuia>
