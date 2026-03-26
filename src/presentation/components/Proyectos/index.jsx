@@ -5,7 +5,7 @@ import styles from './index.module.css'
 const proyectos=[
   {
     imagen:['./portafolio1.png'],
-    descripcion:'Portafolio personal desarrollado con React 18.2 , css.',
+    descripcion:'Portafolio personal desarrollado con React 18.2 , HTML ,css, JavaScript.',
   },
   {
     imagen:['./cursosCapacitacion1.png','./cursosCapacitacion2.png'],
@@ -18,6 +18,12 @@ const proyectos=[
     descripcion:`API de interoperatibidad para la comunicacion entre entidades 
     dministrativas publicas,aquellas relacionadas a la empresa Electro Sur Este. Esta se implemento con 
     el objetivo de consumir servicion SOAP, Desarrollado en ASP.Net utilizando una arquitectura DDD(domain driven-design)`
+  },
+  {
+    imagen:['API'],
+    descripcion:`Migración del microservicio de tarjeta de crédito enlazada con el sistema de gestión de
+    tarjetas de crédito(SGTC) al nuevo sistema integral de medios de pago (SIMP),desarrollado
+    en SpringBoot 2.7, java 11 y arquitectura establecida por la institución(capas)`
   }
 
 ]

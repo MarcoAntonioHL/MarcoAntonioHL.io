@@ -134,7 +134,7 @@ const ButtonDescargaPDF=styled.button`
 export default function Portada() {
   let subnombre="<./>"
   let proyectos="+3";
-  let experiencia="+1";
+  let experiencia="+2";
   let descripción=`Soy bachiller en Ingeniería Informática y de Sistemas, con un enfoque autodidacta y colaborativo.
    Me destaco por mi capacidad para adaptarme a nuevas tecnologías y resolver problemas con creatividad y criterio técnico.
   Tengo mayor experiencia desarrollando con React,.Net, pero también he trabajado en proyectos que involucran backend, bases de datos 

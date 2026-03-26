@@ -31,6 +31,13 @@ const historial=[
     description:'Empresa consultora en gestión por procesos. Participé en la elaboración y/o automatización de procesos, siguiendo la metodología AS-IS, TO-BE y TO-DO, utilizando herramientas BPMN Bizagi, Camunda'
 
   },
+  {
+    fechaInicio:'julio 2025',
+    fechaFin:'marzo 2026',
+    tipoContrato:'Intermediacion laboral',
+    company:'CajaCusco S.A',
+    description:'Empresa financiera regulada pública con personería jurídica de derecho privado en el cualdesempeño labores de soporte en el área de tarjeta de crédito'
+  },
 ]
 export default function Experiencia() {
   return (

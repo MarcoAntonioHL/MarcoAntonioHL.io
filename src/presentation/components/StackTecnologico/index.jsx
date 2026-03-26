@@ -48,6 +48,7 @@ export default function StackTecnologico() {
         <ContenedorTecnologias>
 
           <CardItem><img src={`${import.meta.env.BASE_URL}cshat2.svg`} alt="shart" /><CarItemNombre>c#</CarItemNombre></CardItem>
+          <CardItem><img src={`${import.meta.env.BASE_URL}Java.svg`} alt="Java" /><CarItemNombre>Java</CarItemNombre></CardItem>
           <CardItem><img src={`${import.meta.env.BASE_URL}reactsvg.svg`} alt="react" /><CarItemNombre>React</CarItemNombre></CardItem>
           <CardItem><img src={`${import.meta.env.BASE_URL}jssvg.svg`} alt="JS" /><CarItemNombre>JavaScript</CarItemNombre></CardItem>
           <CardItem><img src={`${import.meta.env.BASE_URL}css.svg`} alt="css" /><CarItemNombre>Css</CarItemNombre></CardItem>
@@ -58,6 +59,7 @@ export default function StackTecnologico() {
           <CardItem><img src={`${import.meta.env.BASE_URL}netcore.svg`} alt="netcore" /><CarItemNombre>.Net</CarItemNombre></CardItem>
           <CardItem><img src={`${import.meta.env.BASE_URL}camunda-logo.png`} alt="camunda" width='60%' height='30px'/><CarItemNombre>Camunda</CarItemNombre></CardItem>
           <CardItem><img src={`${import.meta.env.BASE_URL}bizagi-logo.png`} alt="bizagi" width='60%' height='30px'/><CarItemNombre>Bizagi</CarItemNombre></CardItem>
+          
 
             <h6>{informacion[0].frameworks}</h6>
             <h6>{informacion[0].BD}</h6>
