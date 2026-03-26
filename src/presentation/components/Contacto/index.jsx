@@ -30,14 +30,13 @@ export default function Contact() {
         <div className={styles.redesSociales}>
           <RedesSocialesModule/>
         </div>
-        <form className={styles.formulario} onSubmit={sentEmail}>
-          <input type="text" placeholder="Tu Nombre" name="name" required/>
+        {/*<form className={styles.formulario} onSubmit={sentEmail}>
           <input type="email" placeholder="Tu Email @example.com" name="email" required/>
           <input type="number" placeholder="Tu celular (opcional)" />
           <textarea name="message" placeholder="Mensaje" required></textarea>
         
           <button className={styles.botonEnviar} type="submit">Enviar correo</button>
-        </form>
+        </form>*/}
       </div>
 
     </div>
